@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    font-size: 62.5%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gradient {
+    background: rgb(180,35,35);
+background: linear-gradient(90deg, rgba(180,35,35,1) 0%, rgba(24,40,47,1) 100%);
+}
+
+.page-header {
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    color: #fff;
+    background-color: #fff;
+}
+.phone_icon{
+    font-size: 1.6rem;
+}
+.call_message {
+    margin-left: 1rem;
+    font-size: 1.6rem;
+}
+/*
+.columna_boton{
+    display: flex;
+    justify-content: flex-end;
+}
+*/
+.banner{
+    margin-top: 8.3rem;
+    font-size: 2.2rem;
+    
+    
+}
+.banner_form {
+    color: #fff;
+}
+
+.titulo {
+    font-weight: bold;
+}
+.banner_back {
+    background-color:whitesmoke;
+    border-radius: 5%;
+    /*margin-top: 13rem;*/     
+}
+.banner_back h1{
+    font-weight: bold;
+    color: #B42323;
+}
+.banner_back img {
+    
+    width: 100%;
+       
+}
+.list {
+    padding-left: 2rem;
+    list-style-type: none;
+}
+.list li{
+    padding-left: 4rem;
+    background-image: url(../img/check.svg);
+    background-repeat: no-repeat;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 280px) {
+    .columna_boton{
+        display:block;
+        text-align: center;
+    }
+    .banner {
+        margin-top: 12.3rem;
+    }
+    .banner_back {
+        background-color:whitesmoke;
+        border-radius: 5%;
+        margin: 0 auto;
+        margin-top: 0.9rem;
+        width: 96%;    
+    }
+}
+
+@media (min-width: 800px) {
+    .columna_boton{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .banner {
+        margin-top: 12.3rem;
+    }
+    .banner_back {
+        background-color:whitesmoke;
+        margin: 0 auto;
+        width: 66%;    
+    }
+    
+}
