@@ -122,6 +122,10 @@ footer{
     font-weight: bold;
     color: #B42323;
 }
+
+input:focus::placeholder, textarea:focus::placeholder {
+    color: transparent;
+}
 /*
 .svg_container{
     width: 300px;
