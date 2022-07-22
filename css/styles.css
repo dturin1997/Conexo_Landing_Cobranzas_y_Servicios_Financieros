@@ -12,7 +12,7 @@ body {
 
 .gradient {
     background: rgb(180,35,35);
-background: linear-gradient(90deg, rgba(180,35,35,1) 0%, rgba(24,40,47,1) 100%);
+    background: linear-gradient(90deg, rgba(180,35,35,1) 0%, rgba(24,40,47,1) 100%);
 }
 
 .page-header {
@@ -57,9 +57,17 @@ background: linear-gradient(90deg, rgba(180,35,35,1) 0%, rgba(24,40,47,1) 100%);
     color: #B42323;
 }
 .banner_back img {
-    
     width: 100%;
-       
+    margin: 0 auto;
+    margin-top: 0.75rem;
+    margin-bottom: 00.75rem;
+    background-color: whitesmoke;
+    border-radius: 5%;
+      
+}
+.img_container{
+    border-radius: 5%;
+    background-image: linear-gradient(90deg, rgba(180,35,35,1) 0%, rgba(24,40,47,1) 100%); 
 }
 .list {
     padding-left: 2rem;
