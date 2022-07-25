@@ -229,50 +229,74 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="mb-3">
-                                    <label for="exampleInputNombres" class="form-label">Nombres</label>
-                                    <input type="text" class="prueba form-control fs-3" id="exampleInputNombres" placeholder="Nombre*">
-                                  </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Correo</label>
-                                    <input type="email" class="form-control fs-3" id="exampleInputEmail1" placeholder="Correo*">
+                                    <label for="InputNombres" class="form-label">Nombres</label>
+                                    <input type="text" class="prueba form-control fs-3" id="InputNombres" placeholder="Nombre*">
+                                </div>
+                                <div id="nombresError" class="error_container">
+                                <!--    
+                                    <i class="fa-solid fa-circle-exclamation error_icon"></i>
+                                    <p class="error">Los Nombres no pueden estar vacíos</p>
+                                -->        
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label for="exampleInputTelefono" class="form-label">Telefono</label>
-                                    <input type="number" class="form-control fs-3" id="exampleInputTelefono" placeholder="Telefono*">
+                                    <label for="InputEmail" class="form-label">Correo</label>
+                                    <input type="email" class="form-control fs-3" id="InputEmail" placeholder="Correo*">
+                                </div>
+                                <div id="emailError" class="error_container">
+                                          
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label for="exampleInputEmpresa" class="form-label">Empresa</label>
-                                    <input type="text" class="form-control fs-3" id="exampleInputEmpresa" placeholder="Empresa*">
+                                    <label for="InputTelefono" class="form-label">Telefono</label>
+                                    <input type="number" class="form-control fs-3" id="InputTelefono" placeholder="Telefono*">
+                                </div>
+                                <div id="telefonoError" class="error_container">
+                                          
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <label for="exampleInputPais" class="form-label">Pais</label>
-                                    <input type="text" class="form-control fs-3" id="exampleInputPais" placeholder="Pais*">
+                                    <label for="InputEmpresa" class="form-label">Empresa</label>
+                                    <input type="text" class="form-control fs-3" id="InputEmpresa" placeholder="Empresa*">
+                                </div>
+                                <div id="empresaError" class="error_container">
+                                          
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="InputPais" class="form-label">Pais</label>
+                                    <input type="text" class="form-control fs-3" id="InputPais" placeholder="Pais*">
+                                </div>
+                                <div id="paisError" class="error_container">
+                                          
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="mb-3">
-                                    <label for="exampleInputAsunto" class="form-label">Asunto</label>
-                                    <input type="text" class="form-control fs-3" id="exampleInputAsunto" placeholder="Asunto*">
-                                  </div>
+                                    <label for="InputAsunto" class="form-label">Asunto</label>
+                                    <input type="text" class="form-control fs-3" id="InputAsunto" placeholder="Asunto*">
+                                </div>
+                                <div id="asuntoError" class="error_container">
+                                          
+                                </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="mb-3">
-                                    <label for="floatingTextarea2">Mensaje</label>
-                                    <textarea class="form-control fs-5" placeholder="Describe lo que necesitas." id="floatingTextarea2" style="height: 100px"></textarea>
-                                  </div>
+                                    <label for="Textarea2">Mensaje</label>
+                                    <textarea class="form-control fs-5" placeholder="Describe lo que necesitas." id="Textarea2" style="height: 100px"></textarea>
+                                </div>
+                                <div id="textarea2Error" class="error_container">
+                                          
+                                </div>
                             </div>
                         </div>
                         
                         
-                        <button type="submit" class="btn btn-danger mt-3 fs-2">Enviar</button>
+                        <button id="button3" type="submit" class="btn btn-danger mt-3 fs-2">Enviar</button>
                       </form>
                 </div>              
             </div>
@@ -290,6 +314,7 @@
     <!-- -->
     
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
       
 </body>
 </html>
