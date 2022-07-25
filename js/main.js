@@ -21,7 +21,10 @@ button.addEventListener('click',(event)=>{
     event.preventDefault();
     //console.log(event);
     validateEmpty(names.value, names, namesError, "Los nombres no pueden estar vacíos");
-    validateEmpty(email.value, email, emailError, "El email no puede estar vacío");
+    
+    //validateEmail(email.value, email, emailError, "El email no puede estar vacío");
+    validateEmail(email.value, email, emailError, "El email no es válido");
+    
     validateEmpty(telefono.value, telefono, telefonoError, "El telefono no puede estar vacío");
     validateEmpty(empresa.value, empresa, empresaError, "EL nombre de la empresa no puede estar vacío");
     validateEmpty(pais.value, pais, paisError, "EL nombre del pais no puede estar vacío");
@@ -29,19 +32,30 @@ button.addEventListener('click',(event)=>{
     validateEmpty(textarea2.value, textarea2, textarea2Error, "Debe escribir un mensaje");
 });
 
-function validateEmpty(valueInput, divInput, divError, mensajeInput){
+function validateEmail(valueInput, divInput, divError, mensajeError){
+    //Regular expresions
+    let regExp = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+    //console.log(regExp.test(valueInput))
+    if(regExp.test(valueInput) == true){
+        hideError(divInput, divError);
+    }else{
+        showError(divInput, divError, mensajeError);
+    }
+}
+
+function validateEmpty(valueInput, divInput, divError, mensajeError){
     //console.log(valueInput.length)
     if(valueInput.length == 0){
-        showError(divInput, divError, mensajeInput);
+        showError(divInput, divError, mensajeError);
     }else{
         hideError(divInput, divError);
     }
 }
 
-function showError(divInput, divError, mensajeInput){
+function showError(divInput, divError, mensajeError){
     divInput.style.border = '1px solid red';
     divError.innerHTML = `<i class="fa-solid fa-circle-exclamation error_icon"></i>
-    <p class="error">${mensajeInput}</p>`;
+    <p class="error">${mensajeError}</p>`;
 }
 
 function hideError(divInput, divError){
