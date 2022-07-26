@@ -37,6 +37,8 @@ body {
 .banner{
     margin-top: 8.3rem;
     font-size: 2.2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     
     
 }
@@ -71,11 +73,13 @@ body {
     background-image: linear-gradient(90deg, rgba(180,35,35,1) 0%, rgba(24,40,47,1) 100%); 
 }
 .list {
-    padding-left: 2rem;
+    /* padding-left: 2rem; */
     list-style-type: none;
+    margin-left: 5rem;
 }
 .list li{
-    padding-left: 4rem;
+    padding-left: 5rem;
+    /* margin-left: 10rem; */
     background-image: url(../img/check.svg);
     background-repeat: no-repeat;
     line-height: 2.5rem;
@@ -157,6 +161,13 @@ form input {
     */
     
 }
+.cta_formulario_general {
+    text-decoration: none;
+    color: white;
+}
+.cta_formulario_general:hover {
+    color: white;
+}
 /*
 .svg_container{
     width: 300px;
@@ -173,10 +184,12 @@ form input {
 */
 
 @media (min-width: 280px) and (max-width:800px) {
+    /*
     .columna_boton{
         display:block;
         text-align: center;
     }
+    */
     .banner {
         margin-top: 12.3rem;
     }
@@ -211,8 +224,9 @@ form input {
     }
     .banner_back {
         background-color:whitesmoke;
+        padding-left: 3rem;
         margin: 0 auto;
-        width: 66%;    
+        width: 100%;    
     }
     
     
