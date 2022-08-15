@@ -186,6 +186,36 @@ form input {
 }
 */
 
+/*-------------------- Cifras --------------------*/
+.cifras_section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.cifras_container {
+    /* border: .1rem solid; */
+}
+.cifras {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0.1rem solid rgba(24,40,47,1);
+    border-radius: 2rem;
+    box-shadow: 10px 10px 5px 0px rgba(180,35,35,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(180,35,35,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(180,35,35,0.75);
+}
+.cifras p span {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(180,35,35,1);
+}
+/*-------------------- Cifras --------------------*/
+
 @media (min-width: 280px) and (max-width:800px) {
     /*
     .columna_boton{
