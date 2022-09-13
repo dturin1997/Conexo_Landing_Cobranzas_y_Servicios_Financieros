@@ -1,3 +1,7 @@
+const mediaQuery = window.matchMedia('(min-width: 940px)')
+
+
+
 const names = document.querySelector('#InputNombres');
 const email = document.querySelector('#InputEmail');
 const telefono = document.querySelector('#InputTelefono');
@@ -139,3 +143,4 @@ function showErrorCheckBox(divError, mensajeError){
 function hideErrorCheckBox(divError){
     divError.innerHTML = ``;
 }
+

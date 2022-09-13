@@ -41,7 +41,18 @@
 
     <section class="banner gradient">
       <div class="container">
+        <div class="row">
+          <div class="cold-md-12 img_container">
+            <img class="img-fluid img_mobile" src="./img/1-BANNER-MOBILE.png" alt="">
+            <img class="img-fluid img_desktop" src="./img/1-BANNER-DESKTOP.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!--
+      <div class="container">
         <div class="row align-items-center justify-content-center">
+          -->
+          <!--
           <div class="col-md-12 banner_back align-items-center">
             <h1 class="text-center my-5">Aumente las ventas de su negocio</h1>
             <div class="row my-5 align-items-center justify-content-center">
@@ -57,6 +68,7 @@
               </div>
             </div>
           </div>
+          -->
           <!--
                 <div class="col-md-4 columna_banner_form">
                     
@@ -87,8 +99,10 @@
                       </form>
                 </div>
                 -->
+      <!--
         </div>
       </div>
+      -->
     </section>
 
     <!-- Banner -->
@@ -583,158 +597,175 @@
 
     <!-- Formulario General-->
 
-    <section class="formulario_general py-5" id="formulario_general">
+    <section class="formulario_general" id="formulario_general">
       <div class="container">
-        <div class="row pt-5 align-items-center">
-          <h1 class="text-center">Formulario General</h1>
-          <div class="col-md-6">
+        <div class="row pt-5">
+          <!--
+          <h1 class="text-center pb-5">Formulario De Contacto</h1>
+          -->
+          <!--
+          <div class="col-md-6 text-center">
+            
             <img src="img/handshake.svg" alt="Contact image" />
+            
+            <h1>Complete el siguiente formulario para ponerse en contacto con un asesor</h4>
           </div>
-          <div class="col-md-6">
-            <form
-              id="formulario_general"
-              class="pt-3 px-5"
-              method="GET"
-              action="./thanks.html"
-            >
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="mb-3">
-                    <label for="InputNombres" class="form-label">Nombres</label>
-                    <input
-                      type="text"
-                      class="prueba form-control fs-3"
-                      id="InputNombres"
-                      placeholder="Nombre*"
-                      name="InputNombres"
-                    />
-                  </div>
-                  <div id="nombresError" class="error_container">
-                    <!--    
-                                    <i class="fa-solid fa-circle-exclamation error_icon"></i>
-                                    <p class="error">Los Nombres no pueden estar vacíos</p>
-                                -->
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="InputEmail" class="form-label">Correo</label>
-                    <input
-                      type="email"
-                      class="form-control fs-3"
-                      id="InputEmail"
-                      placeholder="Correo*"
-                      name="InputEmail"
-                    />
-                  </div>
-                  <div id="emailError" class="error_container"></div>
-                </div>
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="InputTelefono" class="form-label"
-                      >Telefono</label
-                    >
-                    <input
-                      type="number"
-                      class="form-control fs-3"
-                      id="InputTelefono"
-                      placeholder="Telefono*"
-                      name="InputTelefono"
-                    />
-                  </div>
-                  <div id="telefonoError" class="error_container"></div>
-                </div>
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="InputEmpresa" class="form-label">Empresa</label>
-                    <input
-                      type="text"
-                      class="form-control fs-3"
-                      id="InputEmpresa"
-                      placeholder="Empresa*"
-                      name="InputEmpresa"
-                    />
-                  </div>
-                  <div id="empresaError" class="error_container"></div>
-                </div>
-                <div class="col-md-6">
-                  <div class="mb-3">
-                    <label for="InputPais" class="form-label">Pais</label>
-                    <input
-                      type="text"
-                      class="form-control fs-3"
-                      id="InputPais"
-                      placeholder="Pais*"
-                      name="InputPais"
-                    />
-                  </div>
-                  <div id="paisError" class="error_container"></div>
-                </div>
-                <div class="col-md-12">
-                  <div class="mb-3">
-                    <label for="InputSector" class="form-label"
-                      >Sector/Industria</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control fs-3"
-                      id="InputSector"
-                      placeholder="InputSector*"
-                      name="InputSector"
-                    />
-                  </div>
-                  <div id="sectorError" class="error_container"></div>
-                </div>
-                <div class="col-md-12">
-                  <div class="mb-3 d-flex align-items-center">
-                    <input
-                      type="checkbox"
-                      id="checkBox1"
-                      value="aceptado"
-                      name="checkBox1"
-                    />
-                    <label for="cbox1" class="politica_label fs-5"
-                      >Aceptas nuestra politica de privacidad</label
-                    >
-                  </div>
-                  <div id="checkError" class="error_container"></div>
-                </div>
-                <div
-                  class="col-md-12 g-recaptcha"
-                  data-sitekey="6LfMuyIhAAAAAN5vmcMCZhjijQZgp2HpIJYvPPMe"
-                ></div>
-                <div id="grecaptchaError" class="error_container"></div>
-                <!--
-                            <div class="col-md-12">
-                                <div class="mb-3">
-                                    <label for="InputAsunto" class="form-label">Asunto</label>
-                                    <input type="text" class="form-control fs-3" id="InputAsunto" placeholder="Asunto*">
-                                </div>
-                                <div id="asuntoError" class="error_container">
-                                          
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="mb-3">
-                                    <label for="Textarea2">Mensaje</label>
-                                    <textarea class="form-control fs-3" placeholder="Describe lo que necesitas." id="Textarea2" style="height: 100px"></textarea>
-                                </div>
-                                <div id="textarea2Error" class="error_container">
-                                          
-                                </div>
-                            </div>
-                            -->
-              </div>
+        -->
+          
 
-              <button
-                id="button3"
-                type="submit"
-                class="btn btn-danger mt-3 fs-2"
+            <div class="col-md-4 pt-3">
+              <div class="bg-warning">
+                <div class="mensaje_formulario">
+                  <h1>Completa el formulario y comienza a gestionar de manera efectiva las cobranzas de tu empresa</h1>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-8 pb-5">
+              <form
+                id="formulario_general"
+                class="pt-3 px-5"
+                method="GET"
+                action="./thanks.html"
               >
-                Enviar
-              </button>
-            </form>
-          </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <label for="InputNombres" class="form-label">Nombres</label>
+                      <input
+                        type="text"
+                        class="prueba form-control fs-3"
+                        id="InputNombres"
+                        placeholder="Nombre*"
+                        name="InputNombres"
+                      />
+                    </div>
+                    <div id="nombresError" class="error_container">
+                      <!--
+                                      <i class="fa-solid fa-circle-exclamation error_icon"></i>
+                                      <p class="error">Los Nombres no pueden estar vacíos</p>
+                                  -->
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="InputEmail" class="form-label">Correo</label>
+                      <input
+                        type="email"
+                        class="form-control fs-3"
+                        id="InputEmail"
+                        placeholder="Correo*"
+                        name="InputEmail"
+                      />
+                    </div>
+                    <div id="emailError" class="error_container"></div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="InputTelefono" class="form-label"
+                        >Telefono</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control fs-3"
+                        id="InputTelefono"
+                        placeholder="Telefono*"
+                        name="InputTelefono"
+                      />
+                    </div>
+                    <div id="telefonoError" class="error_container"></div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="InputEmpresa" class="form-label">Empresa</label>
+                      <input
+                        type="text"
+                        class="form-control fs-3"
+                        id="InputEmpresa"
+                        placeholder="Empresa*"
+                        name="InputEmpresa"
+                      />
+                    </div>
+                    <div id="empresaError" class="error_container"></div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="InputPais" class="form-label">Pais</label>
+                      <input
+                        type="text"
+                        class="form-control fs-3"
+                        id="InputPais"
+                        placeholder="Pais*"
+                        name="InputPais"
+                      />
+                    </div>
+                    <div id="paisError" class="error_container"></div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <label for="InputSector" class="form-label"
+                        >Sector/Industria</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control fs-3"
+                        id="InputSector"
+                        placeholder="InputSector*"
+                        name="InputSector"
+                      />
+                    </div>
+                    <div id="sectorError" class="error_container"></div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-3 d-flex align-items-center">
+                      <input
+                        type="checkbox"
+                        id="checkBox1"
+                        value="aceptado"
+                        name="checkBox1"
+                      />
+                      <label for="cbox1" class="politica_label fs-5"
+                        >Aceptas nuestra politica de privacidad</label
+                      >
+                    </div>
+                    <div id="checkError" class="error_container"></div>
+                  </div>
+                  <div
+                    class="col-md-12 g-recaptcha"
+                    data-sitekey="6LfMuyIhAAAAAN5vmcMCZhjijQZgp2HpIJYvPPMe"
+                  ></div>
+                  <div id="grecaptchaError" class="error_container"></div>
+                  <!--
+                              <div class="col-md-12">
+                                  <div class="mb-3">
+                                      <label for="InputAsunto" class="form-label">Asunto</label>
+                                      <input type="text" class="form-control fs-3" id="InputAsunto" placeholder="Asunto*">
+                                  </div>
+                                  <div id="asuntoError" class="error_container">
+              
+                                  </div>
+                              </div>
+                              <div class="col-md-12">
+                                  <div class="mb-3">
+                                      <label for="Textarea2">Mensaje</label>
+                                      <textarea class="form-control fs-3" placeholder="Describe lo que necesitas." id="Textarea2" style="height: 100px"></textarea>
+                                  </div>
+                                  <div id="textarea2Error" class="error_container">
+              
+                                  </div>
+                              </div>
+                              -->
+                </div>
+                <button
+                  id="button3"
+                  type="submit"
+                  class="btn btn-danger mt-3 fs-2"
+                >
+                  Enviar
+                </button>
+              </form>
+            </div>
+           <!-- fin de columna-->
         </div>
       </div>
     </section>

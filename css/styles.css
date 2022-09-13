@@ -35,13 +35,26 @@ body {
 }
 */
 .banner{
-    margin-top: 8.3rem;
+    margin-top: 7.8rem;
+    /*
     font-size: 2.2rem;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2rem; */
     
+    /* background-size: cover; */
     
 }
+.img_container img{
+    width: 100%;
+}
+/*
+.banner_img {
+    background-image: url(../img/1-BANNER-MOBILE.png);
+    height: 39.5rem;*/
+    /* max-width: 780px; *//*
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
 .banner_form {
     color: #fff;
 }
@@ -68,9 +81,14 @@ body {
     border-radius: 5%;
       
 }
+/*
 .img_container{
     border-radius: 5%;
     background-image: linear-gradient(90deg, rgba(180,35,35,1) 0%, rgba(24,40,47,1) 100%); 
+}
+*/
+.img_desktop {
+    display: none;
 }
 .list {
     /* padding-left: 2rem; */
@@ -220,26 +238,38 @@ form input {
     font-size: 2.2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    border: 0.2rem solid rgba(24,40,47,1);
-    border-radius: 2rem;
+    /* border: 0.2rem solid rgba(24,40,47,1); */
+    /* border-radius: 2rem;
     box-shadow: 10px 10px 5px 0px rgba(180,35,35,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(180,35,35,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(180,35,35,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(180,35,35,0.75); */
 }
 .cifras p span {
     font-size: 3rem;
     font-weight: bold;
     color: rgba(180,35,35,1);
 }
-/*-------------------- Cifras --------------------*/
 
+.mensaje_formulario {
+    text-align: left;
+    font-size: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 0.5rem;
+    padding-left: 2rem;
+    background-color: white;
+}
+/*-------------------- Cifras --------------------*/
+/*
 @media (min-width: 280px) and (max-width:800px) {
+    */
     /*
     .columna_boton{
         display:block;
         text-align: center;
     }
     */
+    /*
     .banner {
         margin-top: 12.3rem;
     }
@@ -255,22 +285,40 @@ form input {
         display: flex;
         justify-content: center;
     }
-    
+    */
     /*
     .banner_form{
         display: flex;
         justify-content: center;
     }
     */
+    /*
 }
-
-@media (min-width: 800px) {
+*/
+@media (min-width: 940px) {
+    
+    .banner_img {
+        /* margin-top: 7.8rem; */
+        
+        /* background-image: url(../img/1-BANNER-DESKTOP.png); */
+        /* height: 39.5rem; */
+        /* background-repeat: no-repeat; */
+        /* background-size: cover; */
+        /* background-size: 100%; */
+        
+    }
+    .img_mobile {
+        display: none;
+    }
+    .img_desktop {
+        display: block;
+    }
     .columna_boton{
         display: flex;
         justify-content: flex-end;
     }
     .banner {
-        margin-top: 12.3rem;
+        margin-top: 7.8rem;
     }
     .banner_back {
         background-color:whitesmoke;
@@ -278,7 +326,12 @@ form input {
         margin: 0 auto;
         width: 100%;    
     }
-    
-    
+    /*
+    .mensaje_formulario {
+     text-align: left;
+     font-size: 4rem;
+     padding-top: 5rem;
+    }
+    */
     
 }
